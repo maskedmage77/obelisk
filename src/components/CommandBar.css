@@ -1,0 +1,29 @@
+.CommandBar {
+  width: calc(600px - 1em);
+  max-width: calc(100% - 1em);
+  height: 3em;
+  background-color: #303030;
+  border-radius: 1em;
+  padding: 0.5em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.CommandButton {
+  display: inline-block;
+  margin-right: 0.5em;
+  background-color: #181818;
+  border-radius: 0.5em;
+  height: 100%;
+  width: 3em;
+}
+
+.CommandButton div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.CommandButton img {
+  width: 1.5em;
+}

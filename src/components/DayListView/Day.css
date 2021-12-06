@@ -1,0 +1,15 @@
+.Day {
+  background-color: #303030;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.Day h1 {
+  font-size: 2em;
+  padding: 0.5em;
+  text-align: center;
+}

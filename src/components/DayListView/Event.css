@@ -1,0 +1,96 @@
+.Event {
+  background-color: #181818;
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 0em 0.5em;
+  transition: 1s;
+  transition: height 1s linear;
+}
+
+.Event:last-child {
+  /* background-color: red; */
+  margin-bottom: 0.5em;
+}
+
+.Event .EventHead {
+  display: flex;
+  gap: 0.5em
+}
+
+.Event .EventHead .Time {
+  color: red;
+}
+
+.Event .EventHead .Chevron {
+  max-width: 1em;
+  max-height: 1em;
+  cursor: pointer; 
+}
+
+.EventHead .ChevronContainer {
+  display: inline-block;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Event .Description {
+  color: var(--textColor);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: normal;
+  max-width: calc(100vw - 4em);
+  width: 100%;
+}
+
+.EventHeight-enter {
+  height: 1em;
+}
+.EventHeight-enter-active {
+  height: 3em;
+  transition: height 200ms;
+}
+.EventHeight-exit {
+  height: 3em;
+}
+.EventHeight-exit-active {
+  height: 1em;
+  transition: height 200ms;
+}
+
+.DetailsOpacity-enter {
+  opacity: 0;
+}
+.DetailsOpacity-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.DetailsOpacity-exit {
+  opacity: 1;
+}
+.DetailsOpacity-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.Rotate180-enter {
+  transform: rotate(0deg);
+}
+.Rotate180-enter-active {
+  transform: rotate(180deg);
+  transition: transform 200ms;
+}
+.Rotate180-enter-done {
+  transform: rotate(180deg);
+}
+.Rotate180-exit {
+  transform: rotate(180deg);
+}
+.Rotate180-exit-active {
+  transform: rotate(360deg);
+  transition: transform 200ms;
+}
